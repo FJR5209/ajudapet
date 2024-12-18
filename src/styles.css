@@ -1,0 +1,162 @@
+/* Estilos do Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;  /* Azul */
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombras suaves */
+  transition: all 0.3s ease-in-out;  /* Transição suave */
+}
+
+.navbar-logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-item {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;  /* Tornando as letras maiúsculas */
+  position: relative;
+}
+
+.navbar-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-item:hover {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+.navbar-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggle:hover {
+  transform: rotate(90deg);  /* Efeito de rotação no botão */
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}/* Estilos dos Botões */
+button {
+  background-color: #007bff;  /* Cor de fundo azul */
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;  /* Diminuindo a borda arredondada */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;  /* Azul mais escuro ao passar o mouse */
+  transform: scale(1.05);  /* Leve aumento de tamanho no hover */
+}
+
+button:focus {
+  outline: none;  /* Remove o contorno padrão ao focar no botão */
+}
+
+
+/* Estilos para o container de botões */
+.home .buttons {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os botões */
+  justify-content: center; /* Centraliza os botões */
+  margin-top: 20px;
+}
+
+/* Estilos para os botões */
+.home .buttons button {
+  padding: 10px 20px; /* Ajusta o tamanho do botão */
+  font-size: 1rem; /* Ajusta o tamanho da fonte */
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: white; /* Cor do texto */
+  border: none; /* Remove borda */
+  border-radius: 4px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mão ao passar por cima */
+  transition: background-color 0.3s ease; /* Efeito de transição */
+}
+
+/* Efeito ao passar o mouse */
+.home .buttons button:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+.chart-container {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.home .buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.home .buttons button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home .buttons button:hover {
+  background-color: #0056b3;
+}

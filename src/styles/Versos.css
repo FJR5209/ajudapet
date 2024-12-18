@@ -1,0 +1,169 @@
+/* SOS.js */
+.sos-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-sizing: border-box; /* Adicionando box-sizing para melhor controle sobre o espaçamento */
+  }
+  
+  .sos-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  table th,
+  table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    word-wrap: break-word; /* Garante que o texto não ultrapasse os limites da célula */
+  }
+  
+  table th {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+  
+  table td {
+    word-wrap: break-word;
+  }
+  
+  /* Responsividade para telas grandes e médias */
+  @media (max-width: 1200px) {
+    .sos-container {
+      padding: 15px;
+    }
+  
+    table th,
+    table td {
+      padding: 10px;
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Responsividade para telas médias e pequenas */
+  @media (max-width: 768px) {
+    .sos-container {
+      padding: 10px;
+    }
+  
+    table {
+      font-size: 0.9rem;
+      overflow-x: auto; /* Permite rolagem horizontal */
+      display: block; /* Garante que a tabela tenha rolagem horizontal */
+      width: 100%;
+      border: none; /* Remove a borda para uma visualização melhor */
+    }
+  
+    table th,
+    table td {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    /* Ajuste no título */
+    .sos-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    
+  
+    .btn-voltar:hover {
+      background-color: #45a049;
+    }
+  }
+  
+  /* Responsividade para telas pequenas */
+  @media (max-width: 480px) {
+    .sos-container h2 {
+      font-size: 1.3rem;
+    }
+  
+    table th,
+    table td {
+      padding: 6px;
+      font-size: 0.8rem;
+    }
+  
+    table td {
+      font-size: 0.8rem;
+    }
+  
+    /* Ajuste no botão */
+    .btn-voltar {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  
+  /* Estilos para a tabela e botões */
+.sos-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+  
+  table td {
+    word-wrap: break-word;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
