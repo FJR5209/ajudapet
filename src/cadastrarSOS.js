@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Toastify from 'toastify-js'; // Importe o Toastify
-import 'toastify-js/src/toastify.css'; // Importe o CSS do Toastify
+import 'toastify-js/src/toastify.css';
 import './styles/cadastro.css'; // Certifique-se de ter o arquivo de estilos
 
 const CadastrarSOS = () => {
